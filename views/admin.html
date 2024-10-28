@@ -1,0 +1,34 @@
+<!-- views/admin.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <nav>
+            <a href="/index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Productos</h2>
+        <div id="admin-product-list"></div>
+
+        <h2>Añadir Nuevo Producto</h2>
+        <form id="add-product-form">
+            <input type="text" name="name" placeholder="Nombre del producto" required>
+            <input type="number" name="price" placeholder="Precio" required>
+            <input type="number" name="stock" placeholder="Stock" required>
+            <input type="text" name="category" placeholder="Categoría" required>
+            <textarea name="description" placeholder="Descripción"></textarea>
+            <button type="submit">Añadir producto</button>
+        </form>
+    </section>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>
